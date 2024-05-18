@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    img {
+        @apply inline-block;
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.aboutme {
+    word-wrap: break-word;
+}
+
+.photo {
+    object-position: center top;
+}
+
+.rating-container {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.rating-button {
+    width: 25px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating-button:first-child {
+    background-color: #a9a9a9;
+}
+
+.rating-button.active:nth-child(2) {
+    background-color: #a5f3fc;
+}
+
+.rating-button.active:nth-child(3) {
+    background-color: #67e8f9;
+}
+
+.rating-button.active:nth-child(4) {
+    background-color: #22d3ee;
+}
+
+.rating-button.active:nth-child(5) {
+    background-color: #06b6d4;
+}
